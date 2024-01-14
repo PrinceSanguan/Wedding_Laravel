@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LogicController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [LogicController::class, 'welcome'])->name('welcome');
+Route::post('/', [LogicController::class, 'welcomePost'])->name('welcome.post');
+
+Route::get('/success', [LogicController::class, 'showParticipants'])->name('success');
+
+Route::get('/404error', [LogicController::class, 'error'])->name('error');

@@ -1,21 +1,21 @@
 @include('includes.header')
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url({{ asset('images/carousel-1.jpg') }}); background-size: cover; background-position: center center;" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Prince &amp; Carol</h1>
-							<h2>We Are Getting Married</h2>
-							<div class="simply-countdown simply-countdown-one"></div>
-							<p><a href="#fh5co-started" class="btn btn-default btn-sm">Punta ka?</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+    <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url({{ asset('images/carousel-1.jpg') }}); background-size: cover; background-position: center center;" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <div class="display-t">
+                        <div class="display-tc animate-box" data-animate-effect="fadeIn">
+                            <h1>Prince &amp; Carol</h1>
+                            <h2>We Are Getting Married</h2>
+                            <div class="simply-countdown simply-countdown-one"></div>
+                            <p><a href="#fh5co-started" class="btn btn-default btn-sm">Punta ka?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
 	<div id="fh5co-couple">
 		<div class="container">
@@ -65,7 +65,7 @@
 						<div class="col-md-10 col-md-offset-1">
 							<div class="col-md-6 col-sm-6 text-center">
 								<div class="event-wrap animate-box">
-									<h3>Main Event</h3>
+									<h3>Wedding Ceremony</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
 										<span>5:00 PM</span>
@@ -73,18 +73,18 @@
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
-										<span>Saturday, 28</span>
+										<span>Saturday, 27</span>
 										<span>January, 2024</span>
 									</div>
-									<p>Simpleng kasiyahan na may kunting pagdiriwang na gaganapin dito. San naway makapunta at makadalo kayo. Salamat ng Marami.</p>
+									<p>Simpleng kasiyahan na may kunting pagdiriwang na gaganapin dito. Sana naway makapunta at makadalo kayo. Salamat ng Marami.</p>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 text-center">
 								<div class="event-wrap animate-box">
-									<h3>Wedding Ceremony</h3>
+									<h3>Wedding Celebration</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>7:00 PM</span>
+										<span>6:00 PM</span>
 										<span>12:00 PM</span>
 									</div>
 									<div class="event-col">
@@ -144,7 +144,7 @@
 										</figure>
 										<span>Marvin Corpuz, via <a href="#" class="twitter">Messenger</a></span>
 										<blockquote>
-											<p>"Dati ako ang inuutangan ni Carol, ngayon sya na inuutangan ko."</p>
+											<p>"Stay Strong!"</p>
 										</blockquote>
 									</div>
 								</div>
@@ -180,80 +180,34 @@
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline">
+
+					<form class="form-inline" method="post" action="{{ route('welcome.post') }}">
+						@csrf
+				
 						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" name="name" placeholder="Buong Pangalan mo?" required>
-							</div>
+								<div class="form-group">
+										<label for="name" class="sr-only">Name</label>
+										<input type="name" class="form-control" name="name" placeholder="Buong Pangalan mo?" required>
+								</div>
 						</div>
+				
 						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email Address mo?" required>
-							</div>
+								<div class="form-group">
+										<label for="email" class="sr-only">Email</label>
+										<input type="email" class="form-control" name="email" placeholder="Email Address mo?" required>
+								</div>
 						</div>
+				
 						<div class="col-md-4 col-sm-4">
-							<input type="submit" value="Pupunta ako" class="btn btn-default btn-block">
+								<input type="submit" value="Pupunta ako" class="btn btn-default btn-block">
 						</div>
-					</form>
+				</form>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<footer id="fh5co-footer" role="contentinfo">
-		<div class="container">
-
-			<div class="row copyright">
-				<div class="col-md-12 text-center">
-					<p>
-						<small class="block">&copy; 2024 All Rights Reserved.</small> 
-						<small class="block">Designed by <a href="https://prince-sanguan.vercel.app/" target="_blank">Prince E. Sanguan</small>
-					</p>
-					<p>
-						<ul class="fh5co-social-icons">
-                            <li><a href="https://www.instagram.com/princesanguan/"><i class="icon-instagram"></i></a></li>
-							<li><a href="https://www.facebook.com/Grandmaster1997/"><i class="icon-facebook"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/prince-sanguan-a78988274/"><i class="icon-linkedin"></i></a></li>
-							<li><a href="https://github.com/PrinceSanguan"><i class="icon-github"></i></a></li>
-						</ul>
-					</p>
-				</div>
-			</div>
-
-		</div>
-	</footer>
-	</div>
-
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="{{ asset('js/jquery.min.js') }}"></script>
-	<!-- jQuery Easing -->
-	<script src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
-	<!-- Bootstrap -->
-	<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-	<!-- Waypoints -->
-	<script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
-	<!-- Carousel -->
-	<script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-	<!-- countTo -->
-	<script src="{{ asset('js/jquery.countTo.js') }}"></script>
-
-	<!-- Stellar -->
-	<script src="{{ asset('js/jquery.stellar.min.js') }}"></script>
-	<!-- Magnific Popup -->
-	<script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
-	<script src="{{ asset('js/magnific-popup-options.js') }}"></script>
-
-	<<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
-	<script src="{{ asset('js/simplyCountdown.js') }}"></script>
-	<!-- Main -->
-	<script src="{{ asset('js/main.js') }}"></script>
-
+	@include('includes.footer')
 	<script>
 
 var endDate = new Date("January 27, 2024 17:00:00");
@@ -287,6 +241,7 @@ simplyCountdown('.simply-countdown-one', {
     zeroPad: false,
     countUp: false
 });
+
 
 </script>
 

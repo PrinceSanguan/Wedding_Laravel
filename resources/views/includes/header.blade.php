@@ -8,15 +8,16 @@
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+ <!-- Open Graph meta tags -->
+ <meta property="og:title" content="Carol and Prince Wedding" />
+ <meta property="og:image" content="{{ asset('images/carousel-1.jpg') }}" />
+ <meta property="og:url" content="http://princecarolwedding.free.nf/" />
+ <meta property="og:site_name" content="Carol and Prince Wedding" />
+ <meta property="og:description" content="Carol and Prince Wedding" />
+
+	<!-- Include the link to the favicon.ico file -->
+	<link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+	<link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
@@ -54,9 +55,6 @@
       <div class="container">
           <div class="row">
               <div class="col-xs-12">
-                  <div id="fh5co-logo">
-                      <a href="index.html">Invitation<strong></strong></a>
-                  </div>
               </div>
           </div>
       </div>
