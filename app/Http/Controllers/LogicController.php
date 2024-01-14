@@ -11,7 +11,7 @@ class LogicController extends Controller
         return view ('welcome');
     }
 
-    public function welcomePost(Request $request)
+ public function welcomePost(Request $request)
     {
         // Manually validate the incoming request data
         $request->validate([
@@ -37,15 +37,19 @@ class LogicController extends Controller
     
         // Redirect to the success page
         return redirect()->route('success');
+    } 
+
+    public function success() {
+        return view ('success');
     }
 
-    public function showParticipants()
+     public function showParticipants()
 {
     $users = User::all();
     $totalParticipants = $users->count();
 
     return view('success', compact('users', 'totalParticipants'));
-}
+} 
 
 public function error() {
     return view ('404error');

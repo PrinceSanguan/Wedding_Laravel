@@ -194,7 +194,7 @@
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
 
-					<form class="form-inline" method="post" action="{{ route('welcome.post') }}">
+					<form class="form-inline" method="post" action=" {{ route('welcome.post') }} ">
 						@csrf
 				
 						<div class="col-md-4 col-sm-4">
@@ -212,7 +212,7 @@
 						</div>
 				
 						<div class="col-md-4 col-sm-4">
-								<input type="submit" value="Pupunta ako" class="btn btn-default btn-block">
+								 <input type="submit" value="Pupunta ako" class="btn btn-default btn-block"> 
 						</div>
 				</form>
 				</div>
