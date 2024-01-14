@@ -45,7 +45,7 @@
 <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
 <script src="{{ asset('js/magnific-popup-options.js') }}"></script>
 
-<<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
 <script src="{{ asset('js/simplyCountdown.js') }}"></script>
 <!-- Main -->
 <script src="{{ asset('js/main.js') }}"></script>

@@ -137,6 +137,7 @@
 										</blockquote>
 									</div>
 								</div>
+
 								<div class="item">
 									<div class="testimony-slide active text-center">
 										<figure>
@@ -145,6 +146,18 @@
 										<span>Marvin Corpuz, via <a href="#" class="twitter">Messenger</a></span>
 										<blockquote>
 											<p>"Stay Strong!"</p>
+										</blockquote>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/sems.jpg" alt="user">
+										</figure>
+										<span>Dionisio Samillano, via <a href="#" class="twitter">Chess.com</a></span>
+										<blockquote>
+											<p>"Sa dami dami nang babaeng naghahangad kay prince swerte ni carol at sya ang pinili!"</p>
 										</blockquote>
 									</div>
 								</div>
