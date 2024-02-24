@@ -24,4 +24,4 @@ Welcome to our wedding website! This platform has been created to share the joy 
 
 -   We'd love to hear your thoughts on the website! If you encounter any issues, have suggestions, or just want to share your excitement about our wedding, feel free to reach out to us through the provided contact information.
 
-Check it out at my live website [here]!(https://www.princecarolwedding.free.nf).
+Check it out at my live website [here!](https://www.princecarolwedding.free.nf).
